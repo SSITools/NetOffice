@@ -26223,27 +26223,54 @@ namespace NetOffice.MSProjectApi
 			return Factory.ExecuteBoolMethodGet(this, "VisualReportsEdit", strVisualReportTemplateFile);
 		}
 
-		/// <summary>
-		/// SupportByVersion MSProject 11, 12, 14
-		/// </summary>
-		/// <param name="name">object name</param>
-		/// <param name="readOnly">object readOnly</param>
-		/// <param name="merge">object merge</param>
-		/// <param name="taskInformation">object taskInformation</param>
-		/// <param name="table">object table</param>
-		/// <param name="sheet">object sheet</param>
-		/// <param name="noAuto">object noAuto</param>
-		/// <param name="userID">object userID</param>
-		/// <param name="databasePassWord">object databasePassWord</param>
-		/// <param name="formatID">object formatID</param>
-		/// <param name="map">object map</param>
-		/// <param name="openPool">optional NetOffice.MSProjectApi.Enums.PjPoolOpen openPool = 0</param>
-		/// <param name="password">optional object password</param>
-		/// <param name="writeResPassword">optional object writeResPassword</param>
-		/// <param name="ignoreReadOnlyRecommended">optional object ignoreReadOnlyRecommended</param>
-		/// <param name="xMLName">optional object xMLName</param>
-		/// <param name="doNotLoadFromEnterprise">optional object doNotLoadFromEnterprise</param>
-		[SupportByVersion("MSProject", 11,12,14)]
+
+        /// <summary>
+        /// SupportByVersion MSProject 11, 12, 14
+        /// </summary>
+        /// <param name="name">object name</param>
+        /// <param name="readOnly">object readOnly</param>
+        /// <param name="merge">object merge</param>
+        /// <param name="taskInformation">object taskInformation</param>
+        /// <param name="table">object table</param>
+        /// <param name="sheet">object sheet</param>
+        /// <param name="noAuto">object noAuto</param>
+        /// <param name="userID">object userID</param>
+        /// <param name="databasePassWord">object databasePassWord</param>
+        /// <param name="formatID">object formatID</param>
+        /// <param name="map">object map</param>
+        /// <param name="openPool">optional NetOffice.MSProjectApi.Enums.PjPoolOpen openPool = 0</param>
+        /// <param name="password">optional object password</param>
+        /// <param name="writeResPassword">optional object writeResPassword</param>
+        /// <param name="ignoreReadOnlyRecommended">optional object ignoreReadOnlyRecommended</param>
+        /// <param name="xMLName">optional object xMLName</param>
+        /// <param name="doNotLoadFromEnterprise">optional object doNotLoadFromEnterprise</param>
+        [SupportByVersion("MSProject", 11, 12, 14)]
+        public bool FileOpenEx(object name, object readOnly =null, object merge = null, object taskInformation= null, object table= null, object sheet = null, object noAuto = null, object userID= null, object databasePassWord = null, object formatID = null, object map = null, object openPool = null, object password = null, object writeResPassword = null, object ignoreReadOnlyRecommended = null, object xMLName = null, object doNotLoadFromEnterprise = null)
+        {
+            return Factory.ExecuteBoolMethodGet(this, "FileOpenEx", new object[] { name, readOnly, merge, taskInformation, table, sheet, noAuto, userID, databasePassWord, formatID, map, openPool, password, writeResPassword, ignoreReadOnlyRecommended, xMLName, doNotLoadFromEnterprise });
+        }
+
+        /// <summary>
+        /// SupportByVersion MSProject 11, 12, 14
+        /// </summary>
+        /// <param name="name">object name</param>
+        /// <param name="readOnly">object readOnly</param>
+        /// <param name="merge">object merge</param>
+        /// <param name="taskInformation">object taskInformation</param>
+        /// <param name="table">object table</param>
+        /// <param name="sheet">object sheet</param>
+        /// <param name="noAuto">object noAuto</param>
+        /// <param name="userID">object userID</param>
+        /// <param name="databasePassWord">object databasePassWord</param>
+        /// <param name="formatID">object formatID</param>
+        /// <param name="map">object map</param>
+        /// <param name="openPool">optional NetOffice.MSProjectApi.Enums.PjPoolOpen openPool = 0</param>
+        /// <param name="password">optional object password</param>
+        /// <param name="writeResPassword">optional object writeResPassword</param>
+        /// <param name="ignoreReadOnlyRecommended">optional object ignoreReadOnlyRecommended</param>
+        /// <param name="xMLName">optional object xMLName</param>
+        /// <param name="doNotLoadFromEnterprise">optional object doNotLoadFromEnterprise</param>
+        [SupportByVersion("MSProject", 11,12,14)]
 		public bool FileOpenEx(object name, object readOnly, object merge, object taskInformation, object table, object sheet, object noAuto, object userID, object databasePassWord, object formatID, object map, object openPool, object password, object writeResPassword, object ignoreReadOnlyRecommended, object xMLName, object doNotLoadFromEnterprise)
 		{
 			return Factory.ExecuteBoolMethodGet(this, "FileOpenEx", new object[]{ name, readOnly, merge, taskInformation, table, sheet, noAuto, userID, databasePassWord, formatID, map, openPool, password, writeResPassword, ignoreReadOnlyRecommended, xMLName, doNotLoadFromEnterprise });
